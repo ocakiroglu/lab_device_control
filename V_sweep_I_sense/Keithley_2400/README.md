@@ -87,16 +87,14 @@ pip install numpy pyqtgraph PyQt5
 
 ---
 
-## 🔑 Permissions
+### c. Permission 🔑
 
-Ensure your user has permission to access the GPIB device (usually `/dev/gpib0`). You may need to add your user to the `gpib` group:
+By default, Linux restricts access to the GPIB interface. You must run the following command every time you plug in the device or restart your computer to grant the necessary permissions:
 
 ```bash
 sudo chmod 666 /dev/gpib0
 
 ```
-
-*(You might need to log out and back in for this to take effect in the first time.)*
 
 ---
 
