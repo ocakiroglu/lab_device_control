@@ -1,4 +1,4 @@
-# Voltage_Sweeps_Current_Sensing (Keithley 2400)
+# Voltage Sweeping - Current Sensing (Keithley 2400)
 
 This directory contains Python automation scripts for performing **I-V Characterization** (Voltage Sweeps while sensing Current) using a **Keithley 2400 SourceMeter**.
 
@@ -15,7 +15,7 @@ The script provides a real-time visual interface for monitoring the sweep and au
 ---
 ## 💾 Requirements
 
-### 🐧 a. Linux Requirements
+###  a. Linux Requirements 🐧
 
 <img src="GPIB-USB-HS_image.jpg" alt="Keithley 2400 and NI GPIB-USB-HS interface" width="400">
 
@@ -74,16 +74,16 @@ sudo python ./setup.py install
 * **Linux-GPIB Files:** [Linux GPIB SourceForge Files](https://sourceforge.net/projects/linux-gpib/files/linux-gpib%20for%203.x.x%20and%202.6.x%20kernels/)
 
 
-### 🐍 b. Python Dependencies
+### b. Python Dependencies 🐍
 
 Install the required Python packages via `pip`:
 
 ```bash
-pip install numpy pyqtgraph PyQt5 pyvisa-py
+pip install numpy pyqtgraph PyQt5
 
 ```
 
-> **Note:** Even though the script uses `import gpib`, having `pyqtgraph` requires a Qt backend like `PyQt5`.
+> **Note:** Although there is no `import pyqt5` directly in the script, having `pyqtgraph` requires a Qt backend like `PyQt5`.
 
 ---
 
@@ -96,7 +96,9 @@ sudo chmod 666 /dev/gpib0
 
 ```
 
-*(You will need to log out and back in for this to take effect.)*
+*(You might need to log out and back in for this to take effect in the first time.)*
+
+---
 
 ## 🛠 Configuration
 
@@ -110,6 +112,8 @@ Before running the script, open `test_keithley_IV_v6.py` and adjust the paramete
 | `step_voltage` | The voltage increment/decrement between measurements |
 | `curr_comp` | Current compliance: The safety limit to prevent sample damage |
 | `curr_range` | The fixed measurement range for the ammeter |
+
+---
 
 ## 📈 Usage
 
