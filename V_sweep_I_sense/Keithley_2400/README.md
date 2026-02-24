@@ -13,8 +13,9 @@ The script provides a real-time visual interface for monitoring the sweep and au
 * **Interactive Inspection:** Includes a crosshair tool to inspect specific data points on the plot after the sweep.
 
 ---
+## 💾 Requirements
 
-### 🐧 Linux Requirements
+### 🐧 a. Linux Requirements
 
 <img src="GPIB-USB-HS_image.jpg" alt="Keithley 2400 and NI GPIB-USB-HS interface" width="400">
 
@@ -56,8 +57,6 @@ sudo chmod 666 /dev/gpib0
 ```
 
 
-
-
 #### 4. Python Integration
 
 The `gpib` module must be installed into your **global Linux Python** environment, as it is often not accessible within virtual environments (Conda/venv).
@@ -67,18 +66,15 @@ cd ~/linux-gpib-4.3.6/linux-gpib-user-4.3.6/language/python
 sudo python ./setup.py install
 ```
 
----
 
-### 📚 References
+#### 📚 References
 * **Primary Guide:** [Step-by-step guide: How to use GPIB with Raspberry Pi/Linux](https://community.element14.com/members-area/personalblogs/b/blog/posts/step-by-step-guide-how-to-use-gpib-with-raspberry-pi-linux)
 * **NI Support:** [Discussion on GPIB-USB-HS and Visa under Linux](https://forums.ni.com/t5/Instrument-Control-GPIB-Serial/What-setup-to-use-for-GPIB-USB-HS-and-Visa-under-Linux/m-p/2110182#M55089)
 * **Source Code:** [Linux-GPIB SourceForge Repository](https://sourceforge.net/p/linux-gpib/git/ci/master/tree/)
 * **Linux-GPIB Files:** [Linux GPIB SourceForge Files](https://sourceforge.net/projects/linux-gpib/files/linux-gpib%20for%203.x.x%20and%202.6.x%20kernels/)
 
----
 
-
-### 2. Python Dependencies
+### 🐍 b. Python Dependencies
 
 Install the required Python packages via `pip`:
 
@@ -89,7 +85,9 @@ pip install numpy pyqtgraph PyQt5 pyvisa-py
 
 > **Note:** Even though the script uses `import gpib`, having `pyqtgraph` requires a Qt backend like `PyQt5`.
 
-### 3. Permissions
+---
+
+## 🔑 Permissions
 
 Ensure your user has permission to access the GPIB device (usually `/dev/gpib0`). You may need to add your user to the `gpib` group:
 
