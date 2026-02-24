@@ -136,7 +136,3 @@ python3 test_keithley_IV_v6.py
 ## ⚠️ Safety Note
 
 The script includes a `finally` block that ensures the SourceMeter output is disabled and the voltage is set to $0V$ upon exit. **Do not manually power off the Keithley while the output is ON unless in an emergency.**
-
----
-
-**Would you like me to help you create a similar README for your `Time_Resolved` (I-t) folder?**
