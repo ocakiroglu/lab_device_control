@@ -22,6 +22,8 @@ Here is exactly what you should write in that section of your `README.md`, incor
 
 ### 🐧 Linux Requirements
 
+<img src="GPIB-USB-HS_image.jpg" alt="Keithley 2400 and NI GPIB-USB-HS interface" width="400">
+
 This script is designed for **Linux** environments. Because National Instruments (NI) does not officially support the **GPIB-USB-HS** interface on modern Linux distributions, you must use the open-source **linux-gpib** driver.
 
 #### 1. System Dependencies
