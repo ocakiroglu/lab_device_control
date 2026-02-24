@@ -112,12 +112,12 @@ Before running the script, open `test_keithley_IV_v6.py` and adjust the paramete
 
 | Parameter | Description |
 | --- | --- |
-| `keithley_address` | The GPIB address (Default: 24) |
-| `start_voltage` | Starting point of the sweep |
-| `stop_voltage` | The maximum peak voltage |
-| `step_voltage` | The increment between measurements |
-| `curr_comp` | Compliance limit (Current ceiling) |
-| `curr_range` | Measurement range for the ammeter |
+| `keithley_address` | The GPIB address of the Keithley 2400 (Default 24) |
+| `start_voltage` | The negative peak (minimum voltage) of the sweep |
+| `stop_voltage` | The positive peak (maximum voltage) of the sweep |
+| `step_voltage` | The voltage increment/decrement between measurements |
+| `curr_comp` | Current compliance: The safety limit to prevent sample damage |
+| `curr_range` | The fixed measurement range for the ammeter |
 
 ## 📈 Usage
 
