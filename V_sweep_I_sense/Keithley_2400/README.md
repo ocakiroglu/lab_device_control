@@ -82,9 +82,6 @@ sudo python ./setup.py install
 
 ---
 
-**Would you like me to create a "Troubleshooting" section based on the common errors mentioned in your guide, like checking `lsmod` or `ibtest`?**
-
-```
 
 ### 2. Python Dependencies
 
