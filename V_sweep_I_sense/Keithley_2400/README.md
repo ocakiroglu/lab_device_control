@@ -79,6 +79,7 @@ sudo python ./setup.py install
 * **Primary Guide:** [Step-by-step guide: How to use GPIB with Raspberry Pi/Linux](https://community.element14.com/members-area/personalblogs/b/blog/posts/step-by-step-guide-how-to-use-gpib-with-raspberry-pi-linux)
 * **NI Support:** [Discussion on GPIB-USB-HS and Visa under Linux](https://forums.ni.com/t5/Instrument-Control-GPIB-Serial/What-setup-to-use-for-GPIB-USB-HS-and-Visa-under-Linux/m-p/2110182#M55089)
 * **Source Code:** [Linux-GPIB SourceForge Repository](https://sourceforge.net/p/linux-gpib/git/ci/master/tree/)
+* **Linux-GPIB Files:** [Linux GPIB SourceForge Files](https://sourceforge.net/projects/linux-gpib/files/linux-gpib%20for%203.x.x%20and%202.6.x%20kernels/)
 
 ---
 
