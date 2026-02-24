@@ -12,12 +12,6 @@ The script provides a real-time visual interface for monitoring the sweep and au
 * **Automated Export:** Saves data as a timestamped `.txt` (TSV) file and exports the final plot as a `.png`.
 * **Interactive Inspection:** Includes a crosshair tool to inspect specific data points on the plot after the sweep.
 
-Since you have a detailed installation guide specifically for the **NI GPIB-USB-HS** adapter and **Keithley 2400**, you should update your **Linux Requirements** section to be much more specific.
-
-The original suggestion was a generic placeholder, but your provided guide shows that `linux-gpib` must be compiled from source rather than just installed via `apt`.
-
-Here is exactly what you should write in that section of your `README.md`, incorporating the specific steps and references from your document:
-
 ---
 
 ### 🐧 Linux Requirements
