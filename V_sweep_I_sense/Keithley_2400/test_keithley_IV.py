@@ -44,10 +44,10 @@ gpib.write(keithley, ":SENS:FUNC 'CURR'")  # Set measure function to current
 gpib.write(keithley, ":OUTP ON")
 
 
-# Create volt_list for the voltage sweep 0 to -max_voltage, -max_voltage to max_voltage, and max_voltage to 0
+# Create volt_list for the voltage sweep 0 to -min_voltage, -min_voltage to max_voltage, and max_voltage to 0
 # Round the data to 2 decimal places
-volt_list1 = np.arange(0, -max_voltage-step_voltage, -step_voltage)
-volt_list2 = np.arange(-max_voltage, max_voltage+step_voltage, step_voltage)
+volt_list1 = np.arange(0, -min_voltage-step_voltage, -step_voltage)
+volt_list2 = np.arange(-min_voltage, max_voltage+step_voltage, step_voltage)
 volt_list3 = np.arange(max_voltage, 0-step_voltage, -step_voltage)
 volt_list = np.concatenate((volt_list1, volt_list2, volt_list3))
 
