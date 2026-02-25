@@ -100,13 +100,13 @@ sudo chmod 666 /dev/gpib0
 
 ## 🛠 Configuration
 
-Before running the script, open `test_keithley_IV_v6.py` and adjust the parameters in the **Main Program** section:
+Before running the script, open `test_keithley_IV.py` and adjust the parameters in the **Main Program** section:
 
 | Parameter | Description |
 | --- | --- |
 | `keithley_address` | The GPIB address of the Keithley 2400 (Default 24) |
-| `start_voltage` | The negative peak (minimum voltage) of the sweep |
-| `stop_voltage` | The positive peak (maximum voltage) of the sweep |
+| `min_voltage` | The negative peak (minimum voltage) of the sweep |
+| `max_voltage` | The positive peak (maximum voltage) of the sweep |
 | `step_voltage` | The voltage increment/decrement between measurements |
 | `curr_comp` | Current compliance: The safety limit to prevent sample damage |
 | `curr_range` | The fixed measurement range for the ammeter |
@@ -118,9 +118,11 @@ Before running the script, open `test_keithley_IV_v6.py` and adjust the paramete
 Run the script from the terminal:
 
 ```bash
-python3 test_keithley_IV_v6.py
+python3 test_keithley_IV.py
 
 ```
+
+or any IDE (eg: VS Code or Spyder) directly. 
 
 1. A window will appear showing the live I-V curve.
 2. The "Forward" sweep is marked in **Red**, and the "Backward" sweep in **Blue**.
