@@ -4,6 +4,14 @@ This directory contains Python automation scripts for performing **I-V Character
 
 The script provides a real-time visual interface for monitoring the sweep and automatically handles data logging and safety procedures.
 
+<p align="center">
+  <img src="keithley2400.png" alt="Keithley 2400" height="220">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="GPIB-USB-HS_image.jpg" alt="GPIB-USB-HS interface" height="220">
+  <br>
+  <em>Figure 1: Keithley 2400 (Left) and National Instruments GPIB-USB-HS Interface (Right) </em>
+</p>
+
 ## 🚀 Features
 
 * **Bi-Directional Sweeping:** Automatically performs a $0V \rightarrow -V_{min} \rightarrow +V_{max} \rightarrow 0V$ loop.
@@ -16,8 +24,6 @@ The script provides a real-time visual interface for monitoring the sweep and au
 ## 💾 Requirements
 
 ###  a. Linux Requirements 🐧
-
-<img src="GPIB-USB-HS_image.jpg" alt="Keithley 2400 and NI GPIB-USB-HS interface" width="400">
 
 This script is designed for **Linux** environments. Because National Instruments (NI) does not officially support the **GPIB-USB-HS** interface on modern Linux distributions, you must use the open-source **linux-gpib** driver.
 
