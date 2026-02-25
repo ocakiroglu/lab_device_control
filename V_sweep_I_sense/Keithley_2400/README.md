@@ -21,58 +21,7 @@ The script provides a real-time visual interface for monitoring the sweep and au
 
 This script is designed for **Linux** environments. Because National Instruments (NI) does not officially support the **GPIB-USB-HS** interface on modern Linux distributions, you must use the open-source **linux-gpib** driver.
 
-#### 1. System Dependencies
-
-Initially, you must install the following build tools and dependencies to compile the drivers:
-
-```bash
-sudo apt install build-essential texinfo texi2html libcwidget-dev libncurses5-dev \
-libx11-dev binutils-dev bison flex libusb-1.0-0 libusb-dev libmpfr-dev \
-libexpat1-dev tofrodos subversion autoconf automake libtool byacc gedit
-
-```
-
-#### 2. Driver Installation (Kernel & User-space)
-
-You cannot simply use `apt-get install`. You must download the `linux-gpib-4.3.6` source and install it at a low-level:
-
-* **User-space:** Build the libraries that allow Python to control the Keithley.
-
-
-* **Kernel:** Build and install the driver modules.
-
-
-* **Module Activation:** Load the driver using `sudo modprobe ni_usb_gpib`.
-
-
-
-#### 3. Configuration & Permissions
-
-* **GPIB Config:** You must edit `/etc/gpib.conf` to set `board_type = "ni_usb_b"` and set the Keithley's primary address (PAD) to `24`.
-
-
-* **USB Permissions:** To run the script without `sudo`, you must grant read/write permissions to the device:
-```bash
-sudo chmod 666 /dev/gpib0
-```
-
-
-#### 4. Python Integration
-
-The `gpib` module must be installed into your **global Linux Python** environment, as it is often not accessible within virtual environments (Conda/venv).
-
-```bash
-cd ~/linux-gpib-4.3.6/linux-gpib-user-4.3.6/language/python
-sudo python ./setup.py install
-```
-
-
-#### 📚 References
-* **Primary Guide:** [Step-by-step guide: How to use GPIB with Raspberry Pi/Linux](https://community.element14.com/members-area/personalblogs/b/blog/posts/step-by-step-guide-how-to-use-gpib-with-raspberry-pi-linux)
-* **NI Support:** [Discussion on GPIB-USB-HS and Visa under Linux](https://forums.ni.com/t5/Instrument-Control-GPIB-Serial/What-setup-to-use-for-GPIB-USB-HS-and-Visa-under-Linux/m-p/2110182#M55089)
-* **Source Code:** [Linux-GPIB SourceForge Repository](https://sourceforge.net/p/linux-gpib/git/ci/master/tree/)
-* **Linux-GPIB Files:** [Linux GPIB SourceForge Files](https://sourceforge.net/projects/linux-gpib/files/linux-gpib%20for%203.x.x%20and%202.6.x%20kernels/)
-
+For a complete, step-by-step guide on compiling and installing these drivers, please refer to: 👉 [Detailed Linux-GPIB Installation Guide](https://github.com/ocakiroglu/lab_device_control/blob/main/V_sweep_I_sense/Keithley_2400/install_linux_gpib.md)
 
 ### b. Python Dependencies 🐍
 
