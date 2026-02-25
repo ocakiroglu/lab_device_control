@@ -88,10 +88,6 @@ or any IDE (eg: VS Code or Spyder) directly.
 
 The script includes a `finally` block that ensures the SourceMeter output is disabled and the voltage is set to $0V$ upon exit. **Do not manually power off the Keithley while the output is ON unless in an emergency.**
 
-## 📜 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
 ## 🙏 Acknowledgments
 
 * **Code Assistance:** This script was developed with the support of **GitHub Copilot**.
