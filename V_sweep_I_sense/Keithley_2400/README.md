@@ -6,7 +6,7 @@ The script provides a real-time visual interface for monitoring the sweep and au
 
 ## 🚀 Features
 
-* **Bi-Directional Sweeping:** Automatically performs a $0V \rightarrow -V_{max} \rightarrow +V_{max} \rightarrow 0V$ loop.
+* **Bi-Directional Sweeping:** Automatically performs a $0V \rightarrow -V_{min} \rightarrow +V_{max} \rightarrow 0V$ loop.
 * **Live Plotting:** Uses `pyqtgraph` for high-performance, real-time data visualization.
 * **Safety Ramping:** If the script is interrupted (Ctrl+C) or hits an error, it automatically ramps the voltage back to $0V$ to protect your equipment and sample.
 * **Automated Export:** Saves data as a timestamped `.txt` (TSV) file and exports the final plot as a `.png`.
