@@ -27,7 +27,7 @@ This method is particularly useful for measuring low-resistance samples or chara
 ### a. Linux Requirements 🐧
 
 This script is designed for **Linux**. You must use the open-source **linux-gpib** driver.
-👉 [Detailed Linux-GPIB Installation Guide](https://github.com/ocakiroglu/lab_device_control/blob/main/V_sweep_I_sense/Keithley_2400/install_linux_gpib.md)
+👉 [Detailed Linux-GPIB Installation Guide](https://github.com/ocakiroglu/lab_device_control/blob/main/I_sweep_V_sense/Keithley_2400/install_linux_gpib.md)
 
 ### b. Python Dependencies 🐍
 
@@ -71,6 +71,7 @@ Run the script from the terminal:
 python3 test_keithley_VI.py
 
 ```
+or with any IDE (eg: VS Code or Spyder) directly.
 
 1. **Visuals:** The "Forward" sweep is marked in **Red**, and the "Backward" sweep in **Blue**.
 2. **Live Updates:** If `verbose` is set to `True`, real-time readings will print to the terminal.
