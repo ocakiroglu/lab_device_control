@@ -6,10 +6,11 @@ This directory contains Python automation scripts for performing **V-I Character
 This method is particularly useful for measuring low-resistance samples or characterizing devices where precise current control is required to avoid thermal runaway.
 
 <p align="center">
-<img src="keithley2400.png" alt="Keithley 2400" height="220">
-&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="GPIB-USB-HS_image.jpg" alt="GPIB-USB-HS interface" height="220">
-<em>Figure 1: Keithley 2400 (Left) and National Instruments GPIB-USB-HS Interface (Right) </em>
+  <img src="keithley2400.png" alt="Keithley 2400" height="220">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="GPIB-USB-HS_image.jpg" alt="GPIB-USB-HS interface" height="220">
+  <br>
+  <em>Figure 1: Keithley 2400 (Left) and National Instruments GPIB-USB-HS Interface (Right) </em>
 </p>
 
 ## 🚀 Features
