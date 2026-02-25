@@ -77,7 +77,7 @@ python3 test_keithley_IV.py
 
 ```
 
-or any IDE (eg: VS Code or Spyder) directly. 
+or with any IDE (eg: VS Code or Spyder) directly. 
 
 1. A window will appear showing the live I-V curve.
 2. The "Forward" sweep is marked in **Red**, and the "Backward" sweep in **Blue**.
