@@ -87,3 +87,13 @@ or any IDE (eg: VS Code or Spyder) directly.
 ## ⚠️ Safety Note
 
 The script includes a `finally` block that ensures the SourceMeter output is disabled and the voltage is set to $0V$ upon exit. **Do not manually power off the Keithley while the output is ON unless in an emergency.**
+
+## 📜 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## 🙏 Acknowledgments
+
+* **Code Assistance:** This script was developed with the support of **GitHub Copilot**.
+* **Institutional Support:** Developed at the **Universidad Complutense de Madrid (UCM)**.
+* **Technical Guidance:** Driver installation procedures were adapted from the [Element14 Linux-GPIB Guide](https://community.element14.com/members-area/personalblogs/b/blog/posts/step-by-step-guide-how-to-use-gpib-with-raspberry-pi-linux). 
