@@ -55,7 +55,7 @@ sudo chmod 666 /dev/gpib0
 
 ## 🛠 Configuration
 
-Before running the script, open `test_keithley_It_v2.py` and adjust the parameters in the **User parameters** section:
+Before running the script, open `test_keithley_It.py` and adjust the parameters in the **User parameters** section:
 
 | Parameter | Description |
 | --- | --- |
@@ -75,7 +75,7 @@ Before running the script, open `test_keithley_It_v2.py` and adjust the paramete
 Run the script from the terminal:
 
 ```bash
-python3 test_keithley_It_v2.py
+python3 test_keithley_It.py
 
 ```
 
